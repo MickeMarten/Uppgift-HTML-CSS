@@ -8,7 +8,7 @@ const clearAllBtn = document.querySelector("#clearAllBtn");
 // JavaScript variables
 let countedTasks = 0;
 // Shows tasks done, "Small-html"
-counter.innerText = `${countedTasks} Completed`;
+counter.innerText = `${countedTasks} completed`;
 
 // Arrays
 const taskArray = [];
@@ -58,7 +58,7 @@ inputbtn.addEventListener("click", function () {
 // adds number to "small" counter
       countedTasks++;
     }
-    counter.innerText = `${countedTasks} Completed`;
+    counter.innerText = `${countedTasks} completed`;
   });
 
   // Button that clears all tasks and resets counter to 0 and clears array.
@@ -74,7 +74,7 @@ inputbtn.addEventListener("click", function () {
     if (taskItem.getAttribute("class") == "completed") {
       countedTasks--;
     }
-    counter.innerText = ` ${countedTasks} Completed`;
+    counter.innerText = ` ${countedTasks} completed`;
     let removeText = taskItem.firstChild.firstChild.textContent;
     let indexToRemove = taskArray.indexOf(removeText);
     taskArray.splice(indexToRemove, 1);
