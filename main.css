@@ -11,15 +11,16 @@ html {
   }
   
   div {
-    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 400px;
-    background-color: white;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.911);
     padding: 20px;
     margin-left: 30%;
-    box-shadow: 0.5px 0.5px 0.5px  black;
     animation-name: slideDown;
-    animation-duration: 3s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
   }
   
   /* #addTaskBtn { 
@@ -45,35 +46,42 @@ html {
   
   .trashCan:hover {
     text-decoration: none;
+    
   }
   
   h1 {
     text-align: center;
     animation-name: fadeIn;
-    animation-duration: 1.1s;
+    animation-duration: 1.8s;
+    font-family: none;
   }
   
   small {
     margin-left: 40%;
     animation-name: fadeIn;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
   button {
       animation-name: fadeIn;
-    animation-duration: 1.9s;
+    animation-duration: 2.1s;
+    background-color: lightgray;
+    color: black;
   }
   
+
   input {
+    border-radius: 3px;
     margin-top: 2%;
     margin-left: 30%;
     animation-name: fadeIn;
-    animation-duration: 1.9s;
-  }
+    animation-duration: 2.1s;
+    }
   
   p {
-    text-align: center;
+    font-size: 10px;
+    padding-left: 150px;
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 1.1s;
     animation-iteration-count: infinite;
     color: red;
   }
@@ -95,7 +103,6 @@ html {
     animation-name: slideUp;
     animation-duration: 0.5s;
     cursor:pointer;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
  
@@ -115,22 +122,20 @@ html {
     }
   }
   
-  /* @keyframes SlideDown { 
-    from {margin-top: -100%;}
-    
+  @keyframes slideDown { 
+    from {margin-top: -20%;} 
     10%{opacity: 0.5;}
-    
     20%{opacity: 0.5;}
-    
     30%{opacity: 0.5;}
-    
     50% {opacity: 0.5;}
     60% {opacity: 0.7;}
-    80% {opacity: 0.8;}
-    90% {margin-top: 7%;}
-  }*/
+    80% {opacity: 0.8; margin-top:5%; }
+    to {margin-top: 0%;}
+  } 
+  
+/* Rippade */
 
-  @keyframes slideDown {
+  /* @keyframes slideDown {   
     0% {
       transform: translateY(-80%);
     }
@@ -141,7 +146,7 @@ html {
     100% {
       transform: translateY(0);
     }
-  }
+   } */
   
   @keyframes fadeIn {
     0% {
