@@ -5,8 +5,8 @@ html {
   
   body {
     background-image: linear-gradient(
-      rgb(255, 184, 184),
-      rgb(240, 150, 150)
+      rgb(248, 201, 201),
+      rgb(255, 130, 129)
     );
   }
   
@@ -42,11 +42,16 @@ html {
   
   .trashCan {
     margin-left: 15px;
+    color: rgb(192, 189, 189);
+    
   }
   
   .trashCan:hover {
     text-decoration: none;
     
+  }
+  .trashCan:active {
+    color: black;
   }
   
   h1 {

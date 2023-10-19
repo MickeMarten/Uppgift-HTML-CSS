@@ -70,8 +70,9 @@ inputbtn.addEventListener("click", function () {
   // });
 
   // Trashcan works. USer can remove specific tasks, also removes task from Array.
-  trashCan.addEventListener("click", function () {
-    if (taskItem.getAttribute("class") == "completed") {
+  trashCan.addEventListener("click", function (event) {
+    const textContainer = event.target.previousSibling;
+    if (textContainer.getAttribute("class") == "completed") {
       countedTasks--;
     }
     counter.innerText = ` ${countedTasks} completed`;
