@@ -158,14 +158,4 @@ span:hover {
   }
 }
 
-/* Egen animation */
-/* @keyframes slideDown {  
-    from {margin-top: -50%;} 
-    10%{opacity: 0.5;}
-    20%{opacity: 0.5;}
-    30%{opacity: 0.5;}
-    50% {opacity: 0.5;}
-    60% {opacity: 0.7;}
-    80% {opacity: 0.8; margin-top:5%; }
-    to {margin-top: 0%;}
-  } */
+
