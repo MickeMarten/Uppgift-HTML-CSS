@@ -17,18 +17,29 @@ const taskArray = [];
 inputbtn.addEventListener("click", function () {
   const userInfo = userInput.value;
 
-    warningText.innerText = "Input must not be empty";
-    return;
-  } else {
-    warningText.innerText = "";
-  }
+
+// userInfo ? warningText.innerText =  null : warningText.innerText = "Input must not be empty";
+  if(userInfo === '') {
+    warningText.innerText = "Input must not be empty"
+    setTimeout(() => {
+      warningText.remove()
+      
+    }, 2000);
+  return;
+   
+ } 
+
+  
+ 
+  
+
 
   const newTask = {
     title: userInfo,
     id: Date.now(),
   };
 
-  taskArray.push(userInfo);
+  taskArray.push(newTask);
 
 
   const taskItem = document.createElement("li");
@@ -83,7 +94,8 @@ inputbtn.addEventListener("click", function () {
   });
 
 
-  userInput.value = "";
+  userInput.value == "";
+  
 });
 
 
